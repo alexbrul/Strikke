@@ -10,7 +10,6 @@ import MainLayout from "./layouts/MainLayout"
 
 function App() {
   return (
-    <div className="main">
       <div className="App">
         <Switch>
         <Route exact path="/" render={() => (
@@ -25,7 +24,6 @@ function App() {
         )} />
         </Switch>
       </div>
-    </div>
   );
 }
 
