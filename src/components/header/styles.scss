@@ -33,6 +33,12 @@
             }
             li {
                 list-style-type: none;
+                display: inline-block;
+                margin-right: 1.5rem;
+
+                &:last-child {
+                    margin-right: 0;
+                }
                 a {
                     font-size: 2rem;
                     line-height: 1;

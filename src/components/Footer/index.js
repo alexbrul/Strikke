@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="wrap">
-          En footer som kan endressss
+          Denne siden er laget av Alexander Bruland
       </div>
     </footer>
   );
