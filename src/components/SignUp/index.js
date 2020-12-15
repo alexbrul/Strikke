@@ -3,6 +3,7 @@ import "./styles.scss";
 import FormInput from "../forms/FormInput";
 import Buttons from "../forms/Button";
 import { auth, handleUserProfile } from "./../../firebase/utils";
+import AuthWrapper from "./../AuthWrapper";
 
 const initialState = {
   displayName: "",
@@ -69,10 +70,7 @@ class SignUp extends Component {
     } = this.state;
 
     return (
-      <div className="signup">
-        <div className="wrap">
-          <h2> SignUp</h2>
-
+      <AuthWrapper headline="Registrer deg her:">
           {errors.length > 0 && (
             <ul>
               {errors.map((err, index) => {
@@ -91,7 +89,7 @@ class SignUp extends Component {
                 onChange={this.handleChange}
               />
               <FormInput
-                type="text"
+                type="email"
                 name="email"
                 value={email}
                 placeholder="Email"
@@ -114,8 +112,7 @@ class SignUp extends Component {
               <Buttons type="submit"> Registrer </Buttons>
             </form>
           </div>
-        </div>
-      </div>
+          </AuthWrapper>
     );
   }
 }
