@@ -5,7 +5,7 @@
     margin: 4rem auto 6rem;
     border: 1px solid black;
 
-    .wrap {
+    .formWrap {
         padding: 10px;
 
         h2 {
@@ -19,8 +19,12 @@
             padding: 0;
 
         }
+        .regularSignIn{
+            margin-top: 3rem;
+        }
+
         .socialSignIn {
-            margin: 3rem auto 0;
+            margin: 1rem auto 0rem;
         }
     }
 

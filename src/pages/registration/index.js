@@ -1,8 +1,13 @@
-import React, {Component} from "react";
+import React, { Component } from "react";
+import SignUp from "./../../components/SignUp"
 
 
 
-export default function Registration(props) {
-
-    return <h1> registration</h1>
+class Registration extends React.Component {
+    render() {
+        return( <SignUp/>
+        )
+    }
 }
+
+export default Registration;

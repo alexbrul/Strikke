@@ -20,6 +20,7 @@ export const handleUserProfile = async (userAuth, additionalData) => {
 
     const snapshot = await userRef.get();
 
+    //If data not on server
     if(!snapshot.exists) {
         const { displayName, email} = userAuth;
         const timestamp = new Date();

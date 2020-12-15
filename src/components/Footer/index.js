@@ -1,7 +1,5 @@
 import React from "react";
 import "./styles.scss";
-import Logo from "../../assets/strikkelogo.png";
-import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
